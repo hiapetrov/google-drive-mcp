@@ -16,7 +16,7 @@ A Model Context Protocol (MCP) server for interacting with the Google Drive API.
     *   Note down the Client ID and Client Secret.
 
 2.  **Obtain Refresh Token:**
-    *   Use a script like `get-google-refresh-token.js` (modified for the `https://www.googleapis.com/auth/drive` scope) with your Client ID and Secret to obtain a refresh token via user consent flow.
+    https://www.googleapis.com/auth/drive - your Client ID and Secret to obtain a refresh token via user consent flow.
 
 3.  **Configure MCP Settings (`mcp_settings.json`):**
     *   Add or update the `google-drive-mcp` entry:
@@ -24,7 +24,7 @@ A Model Context Protocol (MCP) server for interacting with the Google Drive API.
         "google-drive-mcp": {
           "command": "node",
           "args": [
-            "C:/Users/hiape/AppData/Roaming/Roo-Code/MCP/google-drive-mcp/build/index.js" // Adjust path if needed
+          // Adjust path as needed
           ],
           "env": {
             "GOOGLE_CLIENT_ID": "YOUR_CLIENT_ID",
@@ -37,7 +37,7 @@ A Model Context Protocol (MCP) server for interacting with the Google Drive API.
         ```
 
 4.  **Build & Run:**
-    *   Navigate to the MCP directory (`C:\Users\hiape\AppData\Roaming\Roo-Code\MCP\google-drive-mcp`).
+    *   Navigate to the MCP directory.
     *   Run `npm install` if you haven't already.
     *   Run `npm run build`.
     *   The MCP server will be started automatically by the controlling application based on the settings file.
